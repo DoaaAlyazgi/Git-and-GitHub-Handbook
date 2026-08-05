@@ -1,5 +1,4 @@
-# Git-and-GitHub-Handbook
-A bilingual Git &amp; GitHub handbook with practical examples, best practices, and learning notes.
+
 # 📘 Git & GitHub Handbook
 
 > 💻 Learn Git by Doing, Not Just Reading.
