@@ -1,0 +1,319 @@
+# 🚀 Git Init
+
+## 🌐 English
+
+`git init` is used to create a new Git repository in an existing project folder.
+
+It is usually the first Git command you use when starting a new project that is not already a Git repository.
+
+---
+
+## 🔹 Step 1: Open Your Project Folder
+
+Open your Terminal, Command Prompt, or Git Bash.
+
+Navigate to your project folder using:
+
+```bash
+cd path/to/your-project
+```
+
+For example:
+
+```bash
+cd my-project
+```
+
+---
+
+## 🔹 Step 2: Initialize Git
+
+Run:
+
+```bash
+git init
+```
+
+Git will create a hidden `.git` directory inside your project.
+
+This directory contains the information Git needs to track your project history.
+
+You may see a message similar to:
+
+```text
+Initialized empty Git repository in /path/to/your-project/.git/
+```
+
+---
+
+## 🔹 Step 3: Check the Repository
+
+Run:
+
+```bash
+git status
+```
+
+You should see information about your new Git repository and the files that are not yet being tracked.
+
+---
+
+## 🔹 Step 4: Check the `.git` Directory
+
+After running `git init`, your project contains a hidden `.git` directory:
+
+```text
+my-project/
+├── .git/
+├── index.html
+├── style.css
+└── script.js
+```
+
+⚠️ Do not manually edit or delete files inside the `.git` directory unless you know exactly what you are doing.
+
+---
+
+## 🔹 Step 5: Make Your First Commit
+
+After initializing the repository, you can start tracking your files.
+
+First, check the status:
+
+```bash
+git status
+```
+
+Add the files:
+
+```bash
+git add .
+```
+
+Create your first commit:
+
+```bash
+git commit -m "Initial commit"
+```
+
+Your project now has its first recorded version in Git.
+
+---
+
+## 💡 Example
+
+Imagine you have a project called `my-website`.
+
+Navigate to the project:
+
+```bash
+cd my-website
+```
+
+Initialize Git:
+
+```bash
+git init
+```
+
+Add the files:
+
+```bash
+git add .
+```
+
+Create the first commit:
+
+```bash
+git commit -m "Initial commit"
+```
+
+The basic process is:
+
+```text
+Project Folder
+      ↓
+   git init
+      ↓
+Git Repository
+      ↓
+   git add
+      ↓
+Staging Area
+      ↓
+  git commit
+      ↓
+First Version
+```
+
+---
+
+## ⚠️ Important Notes
+
+- Run `git init` inside the project folder.
+- You normally run `git init` only once for a project.
+- `git init` creates a local Git repository.
+- It does not upload your project to GitHub.
+- The `.git` directory contains your repository's history and configuration.
+- Do not run `git init` repeatedly in different folders unless you intentionally want separate repositories.
+
+---
+
+# 🚀 Git Init
+
+## 🌐 العربية
+
+يُستخدم الأمر `git init` لإنشاء مستودع Git جديد داخل مجلد مشروع موجود.
+
+وعادةً يكون من أول أوامر Git التي تستخدمها عند بدء مشروع جديد لم يتم ربطه بمستودع Git من قبل.
+
+---
+
+## 🔹 الخطوة 1: فتح مجلد المشروع
+
+افتح Terminal أو Command Prompt أو Git Bash.
+
+انتقل إلى مجلد المشروع باستخدام:
+
+```bash
+cd path/to/your-project
+```
+
+على سبيل المثال:
+
+```bash
+cd my-project
+```
+
+---
+
+## 🔹 الخطوة 2: تهيئة Git
+
+نفّذ الأمر:
+
+```bash
+git init
+```
+
+سيقوم Git بإنشاء مجلد مخفي باسم `.git` داخل مجلد المشروع.
+
+يحتوي هذا المجلد على المعلومات التي يحتاجها Git لتتبع سجل المشروع وتغييراته.
+
+قد تظهر لك رسالة مشابهة لـ:
+
+```text
+Initialized empty Git repository in /path/to/your-project/.git/
+```
+
+---
+
+## 🔹 الخطوة 3: التحقق من المستودع
+
+نفّذ:
+
+```bash
+git status
+```
+
+ستظهر لك معلومات حول مستودع Git الجديد، بالإضافة إلى الملفات التي لم تتم متابعتها بعد.
+
+---
+
+## 🔹 الخطوة 4: التحقق من مجلد `.git`
+
+بعد تنفيذ `git init` سيحتوي المشروع على مجلد مخفي باسم `.git`:
+
+```text
+my-project/
+├── .git/
+├── index.html
+├── style.css
+└── script.js
+```
+
+⚠️ لا تقم بتعديل أو حذف الملفات الموجودة داخل مجلد `.git` يدويًا إلا إذا كنت تعرف تمامًا ما الذي تفعله.
+
+---
+
+## 🔹 الخطوة 5: إنشاء أول Commit
+
+بعد تهيئة المستودع، يمكنك البدء بتتبع ملفات المشروع.
+
+أولًا، تحقق من حالة الملفات:
+
+```bash
+git status
+```
+
+أضف الملفات:
+
+```bash
+git add .
+```
+
+ثم أنشئ أول Commit:
+
+```bash
+git commit -m "Initial commit"
+```
+
+الآن أصبح لديك أول إصدار مسجل من المشروع داخل Git.
+
+---
+
+## 💡 مثال عملي
+
+لنفترض أن لديك مشروعًا اسمه `my-website`.
+
+انتقل إلى مجلد المشروع:
+
+```bash
+cd my-website
+```
+
+قم بتهيئة Git:
+
+```bash
+git init
+```
+
+أضف الملفات:
+
+```bash
+git add .
+```
+
+أنشئ أول Commit:
+
+```bash
+git commit -m "Initial commit"
+```
+
+يمكن توضيح العملية الأساسية بالشكل التالي:
+
+```text
+مجلد المشروع
+      ↓
+   git init
+      ↓
+مستودع Git
+      ↓
+   git add
+      ↓
+Staging Area
+      ↓
+  git commit
+      ↓
+أول إصدار
+```
+
+---
+
+## ⚠️ ملاحظات مهمة
+
+- يجب تنفيذ `git init` داخل مجلد المشروع.
+- عادةً يتم تنفيذ `git init` مرة واحدة فقط لكل مشروع.
+- الأمر `git init` ينشئ مستودع Git محليًا.
+- لا يقوم الأمر برفع المشروع إلى GitHub.
+- يحتوي مجلد `.git` على سجل المستودع وإعداداته.
+- لا تقم بتنفيذ `git init` في مجلدات مختلفة بشكل عشوائي إلا إذا كنت تريد إنشاء مستودعات منفصلة.
