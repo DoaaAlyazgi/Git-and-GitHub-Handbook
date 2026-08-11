@@ -2,302 +2,148 @@
 
 ## 🌐 English
 
-`git commit` is used to save staged changes as a new snapshot in the Git repository.
+`git commit` saves staged changes as a new snapshot in the Git repository.
 
 A commit represents a specific point in the project's history.
 
 ---
 
-## 🔹 Basic Usage
+## 🔹 Step 1: Stage Your Changes
 
-Before creating a commit, you need to stage your changes:
+Before creating a commit, add the files you want to include.
 
-```bash
-git add .
-```
+    git add .
 
-Then create a commit:
+This stages all modified and new files.
 
-```bash
-git commit -m "Your commit message"
-```
+You can also stage a specific file.
 
-The message should briefly describe the changes you made.
+    git add filename.txt
 
 ---
 
-## 🔹 Commit a Specific Change
+## 🔹 Step 2: Create a Commit
 
-You can stage a specific file:
+Create a commit with a clear message.
 
-```bash
-git add filename.txt
-```
+    git commit -m "Add new feature"
 
-Then commit it:
-
-```bash
-git commit -m "Update filename"
-```
+The message should briefly describe what changed.
 
 ---
 
-## 🔹 Write a Good Commit Message
+## 🔹 Step 3: Check Your Commits
 
-A good commit message should be:
+Use the following command to view your recent commits.
 
-- Short
-- Clear
-- Descriptive
-- Related to the changes
+    git log --oneline
 
 Example:
 
-```bash
-git commit -m "Add login page"
-```
-
-Another example:
-
-```bash
-git commit -m "Fix navigation menu"
-```
+    a1b2c3d Add new feature
 
 ---
 
-## 🔹 View Your Commits
+## 💡 Common Workflow
 
-After creating a commit, you can view your commit history using:
+A basic Git workflow is:
 
-```bash
-git log
-```
-
-For a shorter version:
-
-```bash
-git log --oneline
-```
+    git status
+    git add .
+    git commit -m "Describe your changes"
 
 ---
 
-## 🔄 Basic Workflow
+## 📌 Important
 
-A common Git workflow is:
+Good commit messages should be:
 
-```bash
-git status
-git add .
-git commit -m "Describe your changes"
-```
+- Clear
+- Short
+- Descriptive
+- Related to the actual changes
 
-### Step 1: Check the status
+Examples:
 
-```bash
-git status
-```
-
-### Step 2: Stage your changes
-
-```bash
-git add .
-```
-
-### Step 3: Create a commit
-
-```bash
-git commit -m "Describe your changes"
-```
-
----
-
-## 💡 Example
-
-Suppose you created a new file called `index.html`.
-
-First, check the repository status:
-
-```bash
-git status
-```
-
-Then add the file:
-
-```bash
-git add index.html
-```
-
-Finally, create a commit:
-
-```bash
-git commit -m "Add homepage"
-```
-
-Now the changes are saved as a new snapshot in Git.
-
----
-
-## 📝 Summary
-
-`git commit` saves staged changes into the Git repository.
-
-The basic process is:
-
-```bash
-git add .
-git commit -m "Your commit message"
-```
-
-Remember that `git add` stages the changes, while `git commit` saves those staged changes as a new point in the project's history.
+    git commit -m "Add login page"
+    git commit -m "Fix navigation bug"
+    git commit -m "Update README"
 
 ---
 
 # 🇵🇸 العربية
 
-`git commit` يُستخدم لحفظ التغييرات التي تم تجهيزها (Staged Changes) كنسخة جديدة داخل مستودع Git.
+## ما هو `git commit`؟
 
-يمثل الـ Commit نقطة محددة في تاريخ المشروع.
+يُستخدم الأمر `git commit` لحفظ التغييرات التي تمت إضافتها إلى منطقة التجهيز (Staging Area) كلقطة جديدة داخل مستودع Git.
 
----
-
-## 🔹 الاستخدام الأساسي
-
-قبل إنشاء Commit، يجب أولًا تجهيز التغييرات:
-
-```bash
-git add .
-```
-
-بعد ذلك يمكنك إنشاء Commit:
-
-```bash
-git commit -m "Your commit message"
-```
-
-يجب أن تصف رسالة الـ Commit التغييرات التي قمت بها بشكل مختصر وواضح.
+يمثل الـ Commit نقطة محددة في تاريخ المشروع، ويمكن الرجوع إليها ومراجعتها لاحقًا.
 
 ---
 
-## 🔹 عمل Commit لتغيير محدد
+## 🔹 الخطوة 1: تجهيز التغييرات
 
-يمكنك تجهيز ملف محدد:
+قبل إنشاء Commit، يجب أولًا إضافة الملفات التي تريد حفظها.
 
-```bash
-git add filename.txt
-```
+    git add .
 
-ثم إنشاء Commit:
+يؤدي هذا الأمر إلى تجهيز جميع الملفات الجديدة والمعدلة.
 
-```bash
-git commit -m "Update filename"
-```
+يمكنك أيضًا تجهيز ملف محدد فقط.
+
+    git add filename.txt
 
 ---
 
-## 🔹 كتابة رسالة Commit جيدة
+## 🔹 الخطوة 2: إنشاء Commit
 
-يُفضل أن تكون رسالة الـ Commit:
+أنشئ Commit باستخدام رسالة واضحة تصف التغيير.
 
-- قصيرة
-- واضحة
-- وصفية
-- مرتبطة بالتغييرات التي قمت بها
+    git commit -m "Add new feature"
+
+يُفضّل أن تكون رسالة الـ Commit قصيرة وواضحة وتصف التغيير الذي قمت به.
+
+---
+
+## 🔹 الخطوة 3: عرض الـ Commits
+
+لعرض آخر الـ Commits الموجودة في المشروع، استخدم:
+
+    git log --oneline
 
 مثال:
 
-```bash
-git commit -m "Add login page"
-```
-
-مثال آخر:
-
-```bash
-git commit -m "Fix navigation menu"
-```
+    a1b2c3d Add new feature
 
 ---
 
-## 🔹 عرض الـ Commits
+## 💡 سير العمل الأساسي
 
-بعد إنشاء Commit، يمكنك عرض سجل الـ Commits باستخدام:
+سير العمل الأساسي في Git يكون عادةً:
 
-```bash
-git log
-```
+    git status
+    git add .
+    git commit -m "Describe your changes"
 
-ولعرض نسخة مختصرة من السجل:
+أي:
 
-```bash
-git log --oneline
-```
-
----
-
-## 🔄 سير العمل الأساسي
-
-من الطرق الشائعة للعمل باستخدام Git:
-
-```bash
-git status
-git add .
-git commit -m "Describe your changes"
-```
-
-### الخطوة 1: فحص حالة المستودع
-
-```bash
-git status
-```
-
-### الخطوة 2: تجهيز التغييرات
-
-```bash
-git add .
-```
-
-### الخطوة 3: إنشاء Commit
-
-```bash
-git commit -m "Describe your changes"
-```
+1. `git status` لمعرفة حالة الملفات.
+2. `git add .` لتجهيز التغييرات.
+3. `git commit` لحفظ التغييرات في تاريخ المشروع.
 
 ---
 
-## 💡 مثال
+## 📌 ملاحظة مهمة
 
-لنفترض أنك أنشأت ملفًا جديدًا باسم `index.html`.
+يُفضّل أن تكون رسائل الـ Commit:
 
-أولًا، افحص حالة المستودع:
+- واضحة
+- قصيرة
+- وصفية
+- مرتبطة بالتغييرات الفعلية
 
-```bash
-git status
-```
+أمثلة:
 
-ثم أضف الملف إلى منطقة التجهيز:
-
-```bash
-git add index.html
-```
-
-وأخيرًا، أنشئ Commit:
-
-```bash
-git commit -m "Add homepage"
-```
-
-الآن أصبحت التغييرات محفوظة كنقطة جديدة في تاريخ المشروع داخل Git.
-
----
-
-## 📝 الخلاصة
-
-يُستخدم `git commit` لحفظ التغييرات التي تم تجهيزها داخل مستودع Git.
-
-العملية الأساسية هي:
-
-```bash
-git add .
-git commit -m "Your commit message"
-```
-
-تذكّر أن `git add` يقوم بتجهيز التغييرات، بينما `git commit` يقوم بحفظ هذه التغييرات المجهزة كنقطة جديدة في تاريخ المشروع.
+    git commit -m "Add login page"
+    git commit -m "Fix navigation bug"
+    git commit -m "Update README"
